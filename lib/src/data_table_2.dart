@@ -364,8 +364,9 @@ class DataTable2 extends DataTable {
         themeData.dataTableTheme.dataRowHeight ??
         kMinInteractiveDimension;
     label = Container(
-      padding: padding,
-      height: effectiveDataRowHeight,
+      padding: EdgeInsets.all(16),
+      // padding: padding,
+      // height: effectiveDataRowHeight,
       alignment:
           numeric ? Alignment.centerRight : AlignmentDirectional.centerStart,
       child: DefaultTextStyle(
